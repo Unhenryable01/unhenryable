@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WinUI 3 Design</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://logincdn.msftauth.net/shared/5/images/2_bc3d32a696895f78c19d.svg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            color: black; /* Default text color */
+        }
+
+        header {
+            background-color: rgba(30, 117, 188, 0.9); /* Windows 11 blue */
+            padding: 0 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-start; /* Align to the left */
+            align-items: center;
+            height: 60px;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li:first-child {
+            margin-left: 0; /* Remove left margin for the first item */
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #005ea6; /* Darker blue on hover */
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #1e75bc; /* Windows 11 blue */
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .button:hover {
+            background-color: #005ea6; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>WinUI 3 Design</h1>
+        <p>Welcome to our WinUI 3 design demo.</p>
+        <a href="#" class="button">Open Lunar</a>
+    </main>
+</body>
+</html>
